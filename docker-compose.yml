@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  evtd:
+    container_name: Everest-Smart-Chain
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "26656:26656"  # P2P port
+      - "26657:26657"  # RPC port
+      - "1317:1317"    # API server port
+      - "9090:9090"    # gRPC server port
+      - "8545:8545"    # JSON-RPC HTTP server port
+      - "8546:8546"    # JSON-RPC WebSocket server port
+      - "6065:6065"    # Additional service port discussed
+    volumes:
+      - evtd-data:/root/.evtd
+    restart: unless-stopped
+
+volumes:
+  evtd-data: {}
