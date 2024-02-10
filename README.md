@@ -61,7 +61,7 @@ Get into the Container Bash
 docker exec -it Everest Smart Chain /bin/bash
 ```
 
-once you are inside the container shell , below is an example of self staking 14.9 EVT once validator is running more EVT cam be staked through https://stake.everestchain.net
+once you are inside the container shell , below is an example of self staking 14.9 EVT with 5% Commission on Staking , once validator is running more EVT cam be staked through https://stake.everestchain.net
 
 
 ```
