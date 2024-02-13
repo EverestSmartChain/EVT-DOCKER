@@ -8,7 +8,7 @@ if [ ! -f "$INIT_FLAG" ]; then
     echo "First-time initialization of evtd..."
 
     # Initialize the node
-    /usr/local/bin/evtd init master-node --chain-id "evt_8848-1"
+    /usr/local/bin/evtd init NODE_NAME_PLACEHOLDER --chain-id "evt_8848-1"
     echo "Node initialized."
 
     # Replace the genesis.json file
