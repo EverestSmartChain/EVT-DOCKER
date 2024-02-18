@@ -65,7 +65,8 @@ once you are inside the container shell , below is an example of self staking 14
 
 
 ```
-evtd tx staking create-validator --amount=14900000000000000000aevt --pubkey=$(evtd tendermint show-validator) --moniker="my-pos-node" --chain-id="evt_8848-1" --commission-rate="0.05" --commission-max-rate="0.10" --commission-max-change-rate="0.01" --min-self-delegation="1000000" --gas="auto" --gas-prices="100000aevt" --from=master-node
+./evtd tx staking create-validator   --amount=1490000000000000000000aevt   --pubkey=$(/root/go/bin/evtd tendermint show-validator)   --moniker="skwidmonk"   --chain-id="evt_8848-1"   --commission-rate="0.05"   --commission-max-rate="0.10"   --commission-max-change-rate="0.01"   --min-self-delegation="1000000"   --gas="auto"   --gas-prices="1000aevt"   --from=skwidmonk
+
 ```
 
 For Further Information ask us on Discord or follow the official Documentation 
