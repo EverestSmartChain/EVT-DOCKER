@@ -23,7 +23,7 @@ if [ ! -f "$INIT_FLAG" ]; then
     sed -i 's/^ws-address = ".*:8546"/ws-address = "0.0.0.0:8546"/' /root/.evtd/config/app.toml
     sed -i '121s/enable = false/enable = true/' /root/.evtd/config/app.toml
     sed -i '124s/swagger = false/swagger = true/' /root/.evtd/config/app.toml
-    sed -i 's/^persistent_peers = ""/persistent_peers = "fda3d109e4a1d46558d9f92ad6c5b3fedcb7098b@158.69.35.30:26656"/' /root/.evtd/config/config.toml
+    sed -i 's/^persistent_peers = ""/persistent_peers = "8fe7ccca6f5bd10a2edfc3b7cefc020af8c66c44@149.56.180.50:26656"/' /root/.evtd/config/config.toml
     echo "Service addresses updated in app.toml."
 
     # Modify config.toml for CORS and TCP specific ports
