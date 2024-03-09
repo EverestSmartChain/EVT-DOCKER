@@ -16,10 +16,10 @@ echo "The node name has been set to '$nodeName'."
 
 # Step 3: Build the Docker image using Docker Compose
 echo "Building Docker image..."
-docker-compose build .
+docker compose build .
 
 # Step 4: Run the Docker container using Docker Compose
 echo "Running Docker container..."
-docker-compose up -d
+docker compose up -d
 
 echo "Deployment complete."
