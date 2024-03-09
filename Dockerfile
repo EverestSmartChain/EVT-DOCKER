@@ -8,8 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y wget curl expect
 
 # Download the evtd binary
-RUN wget https://github.com/EverestSmartChain/EverestSmartChain/releases/download/0.1/evtd -O /usr/local/bin/evtd && \
-    chmod +x /usr/local/bin/evtd
+RUN wget https://github.com/EverestSmartChain/EverestSmartChain/releases/download/0.1/evtd -O /usr/local/bin/evtd && chmod +x /usr/local/bin/evtd
 
 # Copy the entrypoint script into the image
 COPY entrypoint.sh /entrypoint.sh
