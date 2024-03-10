@@ -11,9 +11,9 @@ RUN apt-get update && apt-get install -y \
     expect \
  && rm -rf /var/lib/apt/lists/* # Clean up to reduce image size
 
-# Copy the evtd binary and set permissions
-COPY evtd /usr/local/bin/evtd
-RUN chmod +x /usr/local/bin/evtd
+# Download the evtd binary and set permissions
+RUN wget https://github.com/EverestSmartChain/EverestSmartChain/releases/download/0.1/evtd -O /usr/local/bin/evtd \
+ && chmod +x /usr/local/bin/evtd
 
 # Copy the entrypoint script into the image and set permissions
 COPY entrypoint.sh /entrypoint.sh
