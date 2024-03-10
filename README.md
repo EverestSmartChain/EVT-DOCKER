@@ -45,7 +45,7 @@ This command builds the Docker image (if necessary) and starts the container in 
 
 Once your Container is runnung a Full Node of Everest Smart Chain will Start and Start Syncing the blocks .  You may monitor this Sync Process by executing following command 
 ```
-docker exec Everest Smart Chain /bin/bash/tail -f /var/log/evtd/log
+docker exec Everest-Smart-Chain /bin/bash/tail -f /var/log/evtd/log
 ```
 
 ### How to Become Validator
